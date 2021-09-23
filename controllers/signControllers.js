@@ -2,9 +2,6 @@ const korisnik = require('./user')
 const zaBazu = require('../models/komandeBaza')
 
 
-
-
-
 module.exports = {
     pocetnaSign: (req, res) => {
 
@@ -61,10 +58,6 @@ module.exports = {
             }
         })
 
-
-      
-     
-       
         myPromise.then(() => {
                 // zaBazu.kreirajNovogKorisnika(value)
                 console.log('Šifra je ok');
@@ -80,12 +73,7 @@ module.exports = {
                 },email)
                 
             })
-            // .then((id) => {
-                
-            //     console.log('IZ KONTROLERA:', id);
-                
-            // })
-            .then(() => res.render('sign', {
+            .then(() => res.render('index', {
                 title: 'upisano u sustav'
             }))
             .catch(err => {

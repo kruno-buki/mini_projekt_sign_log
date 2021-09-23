@@ -12,7 +12,7 @@ const indexRouter = require('./routes/indexRouter');
 const loginRouter=require('./routes/loginRouter')
 const signRouter=require('./routes/signRouter')
 const adminRouter=require('./routes/adminRouter')
-const usersRouter = require('./routes/users');
+const userRouter = require('./routes/user');
 const errorRouter=require('./routes/errorRouter');
 // --------------------------------------------
 var app = express();
@@ -32,11 +32,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 // --------------------------------------------
 // ! korištenje ruta koje smo učitali
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-
-
-app.use('/login', loginRouter);
 app.use('/sign', signRouter);
+app.use('/login', loginRouter);
+
+app.use('/user', userRouter);
+
+
+
+
 app.use('/admin',adminRouter)
 
 

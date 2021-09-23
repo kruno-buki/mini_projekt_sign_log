@@ -5,4 +5,8 @@ const loginController=require('../controllers/loginController')
 
 router.get('/',loginController.pocetnaLogin)
 
+router.post('/',loginController.getUserData)
+
+
+
 module.exports = router;
