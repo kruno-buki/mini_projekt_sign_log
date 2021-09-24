@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascripts/funkcionalosti.js" defer></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <title>Administrator</title>
 </head>
 
@@ -23,17 +25,18 @@
     <section id="section_users">
         <input type="text" id="search_bar_user" value="SEARCH">
         <table id="users_info_wrapper">
-            <thead id="users_info_header">
+
+            <tr id="users_info_header">
                 <th>ime</th>
                 <th>prezime</th>
                 <th>email</th>
                 <th>broj telefona</th>
                 <th>datum rođenja</th>
                 <th>grad</th>
-            </thead>
-            <tbody>
-                <%for (let el of dataUsers){%>
-                <tr id="users_info">
+            </tr>
+            <tbody class="tbody">
+                 <%for (let el of dataUsers){%>
+                <tr>
                     <td><%=el.ime %></td>
                     <td><%=el.prezime %></td>
                     <td><%=el.email %></td>
@@ -41,10 +44,10 @@
                     <td><%=el.datumRodenja %></td>
                     <td><%=el.grad %></td>
                 </tr>
-                <%}%>
+                 <%}%>
             </tbody>
-            
-            
+           
+        
         </table>
     </section>
 </body>

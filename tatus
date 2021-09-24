@@ -1,0 +1,38 @@
+[33mcommit a18e8de2fbd9cee4085f67f5a0b611a68d140ae2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: buki-kruno <krbuki@gmail.com>
+Date:   Fri Sep 24 11:08:11 2021 +0200
+
+    settings for administrator
+
+[33mcommit 74f8846a82f4d3220f20d6eb8582cce9bb7177fb[m
+Merge: 15e1c67 a3b4b3d
+Author: buki-kruno <krbuki@gmail.com>
+Date:   Thu Sep 23 20:06:06 2021 +0200
+
+    Merge branch 'main' of https://github.com/kruno-buki/mini_projekt_sign_log
+
+[33mcommit 15e1c6792344a1a1bbdd77c6343957d00b1ddc15[m
+Author: buki-kruno <krbuki@gmail.com>
+Date:   Thu Sep 23 20:04:38 2021 +0200
+
+    settings for login system
+
+[33mcommit a3b4b3d3788a4bf3b1a545875ada1f6b12c32395[m
+Author: Krunoslav Bučar <54986047+kruno-buki@users.noreply.github.com>
+Date:   Sat Sep 18 11:50:25 2021 +0200
+
+    Update README.md
+
+[33mcommit e3c67516ad4cc13bdd4e8409081c027056682d85[m
+Author: Krunoslav Bučar <54986047+kruno-buki@users.noreply.github.com>
+Date:   Mon Sep 6 20:02:12 2021 +0200
+
+    Create README.md
+    
+    Adding readme
+
+[33mcommit 71ac8f982fca79f73f97cb68251ed2d37c01e290[m
+Author: buki-kruno <krbuki@gmail.com>
+Date:   Mon Sep 6 19:56:23 2021 +0200
+
+    prvi commit
