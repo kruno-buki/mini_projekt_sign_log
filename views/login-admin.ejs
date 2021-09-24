@@ -5,26 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/styleCommon.css' />
+    <link rel='stylesheet' href='/stylesheets/styleLog.css' />
     <title>Administrator</title>
 </head>
 
 <body>
-    <div>
-        <h1><%=title%></h1>
-        <h2>administratorska stranica</h2>
-    </div>
-    <div>
-        <form action="/login-admin/admin" method="POST">
-            <label for="mail">mail administratora</label>
-            <input type="email" name="mail" id="mail">
+    <section class="section_wrapper">
+        <div class="head1">
+            <h1><%=title%></h1>
+            <h2>administratorska stranica</h2>
+        </div>
+        <div>
+            <form action="/login-admin/admin" method="POST">
+                <label for="mail">mail administratora</label>
+                <input type="email" name="mail" id="mail">
 
-            <label for="password">administratorska lozinka</label>
-            <input type="password" name="password" id="password">
+                <label for="password">administratorska lozinka</label>
+                <input type="password" name="password" id="password">
 
-            <input type="submit" value="potvrdi">
-        </form>
-    </div>
-    <a href="/">Povratak na početnu stranicu</a>
+                <input type="submit" value="potvrdi">
+            </form>
+        </div>
+        <a href="/">Povratak na početnu stranicu</a>
+
+    </section>
+
 </body>
 
 </html>

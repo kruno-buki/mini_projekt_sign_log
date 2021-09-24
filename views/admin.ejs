@@ -20,7 +20,7 @@
         <p>EMAIL: <%=dataAdmin.email%> </p>
     </div>
     <a href="/">Povratak na početnu stranicu</a>
-    <button id="show_hide">Prikaži korisnike</button>
+    <input type="button" id="show_hide" value="Prikaži"></input>
 
     <section id="section_users">
         <input type="text" id="search_bar_user" value="SEARCH">
@@ -41,7 +41,7 @@
                     <td><%=el.prezime %></td>
                     <td><%=el.email %></td>
                     <td><%=el.brojTelefona %></td>
-                    <td><%=el.datumRodenja %></td>
+                    <td><%=el.datumRodenja.getDay()+'.'+el.datumRodenja.getMonth()+'.'+el.datumRodenja.getFullYear() %></td>
                     <td><%=el.grad %></td>
                 </tr>
                  <%}%>

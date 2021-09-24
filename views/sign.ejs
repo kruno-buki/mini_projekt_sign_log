@@ -5,48 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/styleCommon.css' />
+    <link rel='stylesheet' href='/stylesheets/styleSign.css' />
     <title>Upis u bazu</title>
 </head>
 
 <body>
-    <div>
-        <h1><%=title %></h1>
-        <h2>Dobro došli u sustav upisa u bazu podataka</h2>
-    </div>
-    <div>
+    <section class="section_wrapper">
+        <div class="head1">
+            <h1><%=title %></h1>
+            <h2>Dobro došao u sustav za upisa u bazu podataka</h2>
+        </div>
+
         <form action="/sign" method="POST">
-            <label for="ime">ime</label>
-            <input type="text" name="ime">
+            <div>
+                <label for="ime">ime</label>
+                <input type="text" name="ime">
 
-            <label for="prezime">prezime</label>
-            <input type="text" name="prezime">
+                <label for="prezime">prezime</label>
+                <input type="text" name="prezime">
 
-            <label for="email">@mail</label>
-            <input type="email" name="email">
+                <label for="email">@mail</label>
+                <input type="email" name="email">
 
-            <label for="telefon">telefon</label>
-            <input type="text" name="telefon">
+                <label for="telefon">telefon</label>
+                <input type="text" name="telefon">
 
-            <label for="dob">DOB</label>
-            <input type="date" name="dob">
+               
+            </div>
 
-            <label for="grad">GRAD</label>
-            <input type="text" name="grad">
-            
+            <div>
+                <label for="grad">GRAD</label>
+                <input type="text" name="grad">
+                <label for="password1">lozinka</label>
+                <input type="password" name="password1">
 
-            <label for="password1">lozinka</label>
-            <input type="password" name="password1">
+                <label for="password2">potvrdi lozinku</label>
+                <input type="password" name="password2">
 
-            <label for="password2">potvrdi lozinku</label>
-            <input type="password"  name="password2">
-
-            <label for="oporavakPass">upiši neki pojam za oporavak</label>
-            <input type="text" name="oporavakPass">
+                <label for="oporavakPass">upiši neki pojam za oporavak</label>
+                <input type="text" name="oporavakPass">
+            </div>
+            <div>
+                <label for="dob">DOB</label>
+                <input type="date" name="dob">
+            </div>
 
             <input type="submit" value="potvrdi">
         </form>
-    </div>
-    <a href="/">Povratak na početnu stranicu</a>
+
+        <a href="/">Povratak na početnu stranicu</a>
+    </section>
+
 
 </body>
 

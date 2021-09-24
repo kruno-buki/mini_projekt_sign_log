@@ -96,43 +96,6 @@ module.exports = {
             return callback(data)
         })
     },
-    // izmjenaPodataka:function(podaci, id){
-    //     const update="UPDATE korisnik SET email=? WHERE korisnikID=? "
-    //     db.query(sql,(err,data)=>{
-    //         if(err){
-    //             throw err;
-    //         }
-
-    //         console.log(data);
-    //     })
-    // },
-    // izmjenaSifre:function (novaSifra,staraSifra){
-
-    //     const provjeraSifre="UPDATE zaporka SET zaporka.sifra=?  where staraSifra=? "
-    //     db.query(sql,(err,data)=>{
-    //         if(err){
-    //             throw err;
-    //         }
-
-    //         console.log(data);
-    //     })
-    // },
-
-
-    // brisanjeKorisnik:function(id){
-    //     let sql="DELETE FROM korisnik WHERE korisnikID=? ";
-
-    //     db.query(sql, (err, data) => {
-    //         if (err)
-    //             throw err
-    //         if(sql){
-    //         console.log('kosrisnik je obrisan');
-
-    //     }
-    //     console.log('korisnik nije obrisan');
-
-    //     })
-    // }
-
+   
 
 }
