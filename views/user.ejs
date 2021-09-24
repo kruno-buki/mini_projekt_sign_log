@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/styleCommon.css' />
+    <link rel='stylesheet' href='/stylesheets/styleUser.css' />
     <title>Podaci - korisnik</title>
 </head>
+
 <body>
-    <h1>Moji podaci</h1>
-    
-    <div>
-        <p>IME:<%=data.ime%></p>
-        <p>PREZIME: <%=data.prezime%></p>
-        <p>EMAIL: <%=data.email%></p>
-        <p>BROJ TELEFONA: <%=data.brojTelefona%></p>
-        <p>DATUM ROĐENJA: <%=data.datumRodenja%></p>
-        <p>GRAD: <%=data.grad%></p>
-      
-    </div>
-    <a href="/">Povratak na početnu stranicu</a>
-   
-       
-    
+    <section class="section_wrapper">
+        <div class="head1">
+        <h1>Moji podaci</h1>
+        </div>
+        <div class="user_data">
+            <p>IME:<span><%=data.ime%></span></p>
+            <p>PREZIME:<span><%=data.prezime%></span> </p>
+            <p>EMAIL:<span><%=data.email%></span></p>
+            <p>BROJ:<span><%=data.brojTelefona%></span></p>
+            <p>ROĐEN:<span><%=data.datumRodenja.getDay()+'.'+data.datumRodenja.getMonth()+'.'+data.datumRodenja.getFullYear()%></span> </p>
+            <p>GRAD: <span><%=data.grad%></span></p>
+
+        </div>
+        <a href="/">Povratak na početnu stranicu</a>
+    </section>
+
+
+
 </body>
+
 </html>

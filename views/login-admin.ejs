@@ -16,17 +16,17 @@
             <h1><%=title%></h1>
             <h2>administratorska stranica</h2>
         </div>
-        <div>
+        
             <form action="/login-admin/admin" method="POST">
-                <label for="mail">mail administratora</label>
-                <input type="email" name="mail" id="mail">
+                <label for="mail">mail administratora (👉🏻admin@mail.com)</label>
+                <input type="email" name="mail" id="mail" required>
 
-                <label for="password">administratorska lozinka</label>
-                <input type="password" name="password" id="password">
+                <label for="password">administratorska lozinka (👉🏻0070)</label>
+                <input type="password" name="password" id="password" required>
 
                 <input type="submit" value="potvrdi">
             </form>
-        </div>
+        
         <a href="/">Povratak na početnu stranicu</a>
 
     </section>

@@ -53,3 +53,13 @@ body{
   text-decoration:underline;
 }
 
+
+.section_wrapper a{
+  text-decoration: none;
+ color:white;
+  background-color: #354c76;
+  padding:1rem;
+  border-radius: 5px;
+
+}
+
