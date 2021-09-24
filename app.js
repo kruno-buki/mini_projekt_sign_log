@@ -11,8 +11,8 @@ var logger = require('morgan');
 const indexRouter = require('./routes/indexRouter');
 const loginRouter=require('./routes/loginRouter')
 const signRouter=require('./routes/signRouter')
-const adminRouter=require('./routes/adminRouter')
-const userRouter = require('./routes/user');
+// const adminRouter=require('./routes/adminRouter')
+// const userRouter = require('./routes/user');
 const errorRouter=require('./routes/errorRouter');
 // --------------------------------------------
 var app = express();
@@ -33,15 +33,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ! korištenje ruta koje smo učitali
 app.use('/', indexRouter);
 app.use('/sign', signRouter);
-app.use('/login', loginRouter);
-
-app.use('/user', userRouter);
-
-
-
-
-app.use('/admin',adminRouter)
-
+app.use(loginRouter);
+// app.use('/login', loginRouter);
+// app.use('/admin',loginRouter)
+// app.use('/user', userRouter);
 
 app.use('/error',errorRouter);
 // --------------------------------------------

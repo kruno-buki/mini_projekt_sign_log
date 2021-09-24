@@ -5,29 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prijava</title>
+    <title>Administrator</title>
 </head>
 
 <body>
     <div>
         <h1><%=title%></h1>
-        <h2>Prijava u bazu podataka</h2>
+        <h2>administratorska stranica</h2>
     </div>
-
     <div>
-        <form action="/login" method="POST">
-            <label for="mail">mail</label>
-            <input type="email" name="mail">
+        <form action="/login-admin/admin" method="POST">
+            <label for="mail">mail administratora</label>
+            <input type="email" name="mail" id="mail">
 
-            <label for="password">lozinka</label>
-            <input type="password" name="password">
+            <label for="password">administratorska lozinka</label>
+            <input type="password" name="password" id="password">
 
             <input type="submit" value="potvrdi">
         </form>
     </div>
     <a href="/">Povratak na početnu stranicu</a>
-
-
 </body>
 
 </html>

@@ -9,21 +9,43 @@
 </head>
 
 <body>
+    <h1>Dobro došao u korisnički sustav upravljanja</h1>
     <div>
-        <h1><%=title%></h1>
-        <h2>administratorska stranica</h2>
+        <h3>tvoji podaci su:</h3>
+        <p>ID: <%=dataAdmin.korisnikID%></p>
+        <p>IME: <%=dataAdmin.ime %> </p>
+        <p>PREZIME: <%=dataAdmin.prezime%> </p>
+        <p>EMAIL: <%=dataAdmin.email%> </p>
     </div>
-    <div>
-        <form action="/login-check" method="get">
-            <label for="mail">mail administratora</label>
-            <input type="email" id="mail">
+    <a href="/">Povratak na početnu stranicu</a>
+    <button id="show_hide">Prikaži korisnike</button>
 
-            <label for="password">administratorska lozinka</label>
-            <input type="password" name="password" id="password">
-
-            <input type="submit" value="potvrdi">
-        </form>
-    </div>
+    <section id="section_users">
+        <input type="text" id="search_bar_user" value="SEARCH">
+        <table id="users_info_wrapper">
+            <thead id="users_info_header">
+                <th>ime</th>
+                <th>prezime</th>
+                <th>email</th>
+                <th>broj telefona</th>
+                <th>datum rođenja</th>
+                <th>grad</th>
+            </thead>
+            <tbody>
+                <%for (let el of dataUsers){%>
+                <tr id="users_info">
+                    <td><%=el.ime %></td>
+                    <td><%=el.prezime %></td>
+                    <td><%=el.email %></td>
+                    <td><%=el.brojTelefona %></td>
+                    <td><%=el.datumRodenja %></td>
+                    <td><%=el.grad %></td>
+                </tr>
+                <%}%>
+            </tbody>
+            
+            
+        </table>
+    </section>
 </body>
-
 </html>

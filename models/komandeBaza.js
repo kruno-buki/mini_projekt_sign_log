@@ -70,28 +70,32 @@ module.exports = {
 
             // console.log('DATA:', data);
             let returnData = data[0]
-            console.log('data iz baze: ',returnData);
+            // console.log('data iz baze: ',returnData);
             return callback(returnData)
             
 
         })
-    }
+    },
+    selectKorisnik:function(email){
+        const sql = 'SELECT email from korisnik where email=?'
+        db.query(sql,(err,data)=>{
+            if(err){
+                throw err;
+            }
 
-
-  
-
-
-
-    // selectKorisnik:function(email){
-    //     const sql = 'SELECT email from korisnik where email=?'
-    //     db.query(sql,(err,data)=>{
-    //         if(err){
-    //             throw err;
-    //         }
-
-    //         console.log(data);
-    //     })
-    // },
+            console.log(data);
+        })
+    },
+    selectAllUsers:function(callback){
+        const sql = "SELECT * from korisnik WHERE administrator NOT IN (1) "
+        db.query(sql,(err,data)=>{
+            if(err){
+                throw err;
+            }
+                     
+            return callback(data)
+        })
+    },
     // izmjenaPodataka:function(podaci, id){
     //     const update="UPDATE korisnik SET email=? WHERE korisnikID=? "
     //     db.query(sql,(err,data)=>{
