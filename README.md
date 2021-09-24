@@ -1,7 +1,7 @@
 ### Sign in /Log in 😀
 
 ![alt text](https://github.com/kruno-buki/mini_projekt_sign_log
-/blob/main//public/images/Screenshot.jpg?raw=true)
+/blob/main/public/images/Screenshot.jpg?raw=true)
 
 ## 👉🏻 HTML + CSS + JavaScript + Node.js + Express + Data Base (XAMPP | MySql)
 
