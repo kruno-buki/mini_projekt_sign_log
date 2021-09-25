@@ -1,8 +1,8 @@
 ### Sign in /Log in 😀
 
+## 👉🏻 HTML + CSS + JavaScript + Node.js + Express + Data Base (XAMPP | MySql)
 ![alt text](https://github.com/kruno-buki/mini_projekt_sign_log/blob/main/public/images/Screenshot.jpg?raw=true)
 
-## 👉🏻 HTML + CSS + JavaScript + Node.js + Express + Data Base (XAMPP | MySql)
 
 ### Kako koristiti/How to use:
 
